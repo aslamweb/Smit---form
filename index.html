@@ -1,208 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-      /* Custom shadow for a more all-sided effect with gradient colors */
-      .shadow-all-sides-gradient {
-        /*
-          This box-shadow uses multiple layers:
-          1. A base, subtle, general black shadow.
-          2. A blue glow that extends slightly to the bottom-right.
-          3. A green glow that extends slightly to the top-left.
-          This combination creates a dimensional, gradient-like effect on all sides.
-        */
-        box-shadow:
-          0 0 10px rgba(0, 0, 0, 0.1), /* Subtle general shadow */
-          -5px -5px 20px rgba(34, 197, 94, 0.3), /* Top-left green glow */
-          5px 5px 20px rgba(59, 130, 246, 0.3);  /* Bottom-right blue glow */
-      }
-    </style>
-  </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      /* Custom shadow for a more all-sided effect with gradient colors */
+      .shadow-all-sides-gradient {
+        /*
+          This box-shadow uses multiple layers:
+          1. A base, subtle, general black shadow.
+          2. A blue glow that extends slightly to the bottom-right.
+          3. A green glow that extends slightly to the top-left.
+          This combination creates a dimensional, gradient-like effect on all sides.
+        */
+        box-shadow:
+          0 0 10px rgba(0, 0, 0, 0.1), /* Subtle general shadow */
+          -5px -5px 20px rgba(34, 197, 94, 0.3), /* Top-left green glow */
+          5px 5px 20px rgba(59, 130, 246, 0.3);  /* Bottom-right blue glow */
+      }
+    </style>
+  </head>
 
-  <body class="bg-gradient-to-r from-blue-400 via-green-400 to-yellow-400 min-h-screen flex flex-col items-center justify-center">
+  <body class="bg-gradient-to-r from-blue-400 via-green-400 to-yellow-400 min-h-screen flex flex-col items-center justify-center">
 
-    <header class="bg-white py-4 w-full">
-        <div class="container mx-auto flex flex-col items-center px-4 max-w-screen-lg">
-            <div class="mb-4">
-                <img src="https://smit-registrationform.netlify.app/Saylani%20logo.png" alt="Saylani Welfare Logo" class="h-20 w-auto">
-            </div>
-            <div class="flex space-x-6">
-                <a href="https://www.facebook.com/SaylaniWelfareInternationalTrust/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 p-1">
-                    <i class="fab fa-facebook-square text-3xl"></i>
-                </a>
-                <a href="https://www.instagram.com/officialswit/" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:text-pink-800 p-1">
-                    <i class="fab fa-instagram-square text-3xl"></i>
-                </a>
-                <a href="https://www.youtube.com/@SaylaniWelfareInternationalTrust" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800 p-1">
-                    <i class="fab fa-youtube-square text-3xl"></i>
-                </a>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white py-4 w-full">
+        <div class="container mx-auto flex flex-col items-center px-4 max-w-screen-lg">
+            <div class="mb-4">
+                <img src="https://smit-registrationform.netlify.app/Saylani%20logo.png" alt="Saylani Welfare Logo" class="h-20 w-auto">
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://www.facebook.com/SaylaniWelfareInternationalTrust/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 p-1">
+                    <i class="fab fa-facebook-square text-3xl"></i>
+                </a>
+                <a href="https://www.instagram.com/officialswit/" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:text-pink-800 p-1">
+                    <i class="fab fa-instagram-square text-3xl"></i>
+                </a>
+                <a href="https://www.youtube.com/@SaylaniWelfareInternationalTrust" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800 p-1">
+                    <i class="fab fa-youtube-square text-3xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
 
-    <h2 class="text-center text-2xl font-bold mt-8 mb-4 text-gray-800">Registration Form - SMIT</h2>
+    <h2 class="text-center text-2xl font-bold mt-8 mb-4 text-gray-800">Registration Form - SMIT</h2>
 
-    <div class="bg-white p-8 rounded-lg shadow-all-sides-gradient w-full max-w-4xl mb-8">
-      <form id="registrationForm" action="https://formsubmit.co/aslamweb@msn.com" enctype="multipart/form-data" method="POST" class="space-y-4">
+    <div class="bg-white p-8 rounded-lg shadow-all-sides-gradient w-full max-w-4xl mb-8">
+      <form id="registrationForm" action="https://formsubmit.co/aslamweb@msn.com" enctype="multipart/form-data" method="POST" class="space-y-4">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <label class="block" for="country-select">
-            <span class="font-semibold">Select country:</span>
-            <select name="country" class="w-full border rounded p-2" id="country-select">
-              <option value="Pakistan">Pakistan</option>
-              <option value="Turkey">Turkey</option>
-            </select>
-          </label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label class="block" for="country-select">
+            <span class="font-semibold">Select country:</span>
+            <select name="country" class="w-full border rounded p-2" id="country-select">
+              <option value="Pakistan">Pakistan</option>
+              <option value="Turkey">Turkey</option>
+            </select>
+          </label>
 
-          <label class="block" for="city-select">
-            <span class="font-semibold">Select city:</span>
-            <select name="city" class="w-full border rounded p-2" id="city-select">
-              <option value="Quetta">Quetta</option>
-              <option value="Karachi">Karachi</option>
-              <option value="Faisalabad">Faisalabad</option>
-              <option value="Multan">Multan</option>
-              <option value="Lahore">Lahore</option>
-              <option value="Hyderabad">Hyderabad</option>
-              <option value="Chaman">Chaman</option>
-            </select>
-          </label>
-        </div>
+          <label class="block" for="city-select">
+            <span class="font-semibold">Select city:</span>
+            <select name="city" class="w-full border rounded p-2" id="city-select">
+              <option value="Quetta">Quetta</option>
+              <option value="Karachi">Karachi</option>
+              <option value="Faisalabad">Faisalabad</option>
+              <option value="Multan">Multan</option>
+              <option value="Lahore">Lahore</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Chaman">Chaman</option>
+            </select>
+          </label>
+        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <label class="block" for="course-select">
-            <span class="font-semibold">Select course of event:</span>
-            <select name="Course" class="w-full border rounded p-2" id="course-select">
-              <option value="Web Development">Web Development</option>
-              <option value="Graphics Designing">Graphics Designing</option>
-              <option value="AI ChatBot Development">AI ChatBot Development</option>
-            </select>
-          </label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label class="block" for="course-select">
+            <span class="font-semibold">Select course of event:</span>
+            <select name="Course" class="w-full border rounded p-2" id="course-select">
+              <option value="Web Development">Web Development</option>
+              <option value="Graphics Designing">Graphics Designing</option>
+              <option value="AI ChatBot Development">AI ChatBot Development</option>
+            </select>
+          </label>
 
-          <label class="block" for="proficiency-select">
-            <span class="font-semibold">Computer Proficiency:</span>
-            <select name="Computer Profeciency" class="w-full border rounded p-2" id="proficiency-select">
-              <option value="somehow">Somehow</option>
-              <option value="beginner">Beginner</option>
-              <option value="expert">Expert</option>
-            </select>
-          </label>
-        </div>
+          <label class="block" for="proficiency-select">
+            <span class="font-semibold">Computer Proficiency:</span>
+            <select name="Computer Profeciency" class="w-full border rounded p-2" id="proficiency-select">
+              <option value="somehow">Somehow</option>
+              <option value="beginner">Beginner</option>
+              <option value="expert">Expert</option>
+            </select>
+          </label>
+        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <label class="block" for="full-name-input">
-            <span class="font-semibold">Full Name:</span>
-            <input type="text" name="full_name" class="w-full border rounded p-2" required id="full-name-input" />
-          </label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label class="block" for="full-name-input">
+            <span class="font-semibold">Full Name:</span>
+            <input type="text" name="full_name" class="w-full border rounded p-2" required id="full-name-input" />
+          </label>
 
-          <label class="block" for="father-name-input">
-            <span class="font-semibold">Father Name:</span>
-            <input type="text" name="father_name" class="w-full border rounded p-2" required id="father-name-input" />
-          </label>
-        </div>
+          <label class="block" for="father-name-input">
+            <span class="font-semibold">Father Name:</span>
+            <input type="text" name="father_name" class="w-full border rounded p-2" required id="father-name-input" />
+          </label>
+        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <label class="block" for="email-input">
-            <span class="font-semibold">Email:</span>
-            <input type="email" name="email" class="w-full border rounded p-2" required id="email-input" />
-          </label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label class="block" for="email-input">
+            <span class="font-semibold">Email:</span>
+            <input type="email" name="email" class="w-full border rounded p-2" required id="email-input" />
+          </label>
 
-          <label class="block" for="phone-input">
-            <span class="font-semibold">Phone:</span>
-            <input type="tel" name="phone" class="w-full border rounded p-2" required id="phone-input" />
-          </label>
-        </div>
+          <label class="block" for="phone-input">
+            <span class="font-semibold">Phone:</span>
+            <input type="tel" name="phone" class="w-full border rounded p-2" required id="phone-input" />
+          </label>
+        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <label class="block" for="cnic-input">
-            <span class="font-semibold">CNIC:</span>
-            <input type="number" name="cnic" class="w-full border rounded p-2" required id="cnic-input" />
-          </label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label class="block" for="cnic-input">
+            <span class="font-semibold">CNIC:</span>
+            <input type="number" name="cnic" class="w-full border rounded p-2" required id="cnic-input" />
+          </label>
 
-          <label class="block" for="father-cnic-input">
-            <span class="font-semibold">Father CNIC:</span>
-            <input type="number" name="father_cnic" class="w-full border rounded p-2" required id="father-cnic-input" />
-          </label>
-        </div>
+          <label class="block" for="father-cnic-input">
+            <span class="font-semibold">Father CNIC:</span>
+            <input type="number" name="father_cnic" class="w-full border rounded p-2" required id="father-cnic-input" />
+          </label>
+        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <label class="block" for="dob-input">
-            <span class="font-semibold">Date of Birth:</span>
-            <input type="date" name="dob" class="w-full border rounded p-2" required id="dob-input" />
-          </label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label class="block" for="dob-input">
+            <span class="font-semibold">Date of Birth:</span>
+            <input type="date" name="dob" class="w-full border rounded p-2" required id="dob-input" />
+          </label>
 
-          <label class="block" for="gender-select">
-            <span class="font-semibold">Gender:</span>
-            <select name="gender" class="w-full border rounded p-2" required id="gender-select">
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
-          </label>
-        </div>
+          <label class="block" for="gender-select">
+            <span class="font-semibold">Gender:</span>
+            <select name="gender" class="w-full border rounded p-2" required id="gender-select">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </label>
+        </div>
 
-        <label class="block" for="address-input">
-          <span class="font-semibold">Address:</span>
-          <input type="text" name="address" class="w-full border rounded p-2" required id="address-input" />
-        </label>
+        <label class="block" for="address-input">
+          <span class="font-semibold">Address:</span>
+          <input type="text" name="address" class="w-full border rounded p-2" required id="address-input" />
+        </label>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <label class="block" for="qualification-select">
-            <span class="font-semibold">Last Qualification:</span>
-            <select name="qualification" class="w-full border rounded p-2" id="qualification-select">
-              <option value="Metric">Metric</option>
-              <option value="Bachelor">Bachelor</option>
-              <option value="Master">Master</option>
-            </select>
-          </label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label class="block" for="qualification-select">
+            <span class="font-semibold">Last Qualification:</span>
+            <select name="qualification" class="w-full border rounded p-2" id="qualification-select">
+              <option value="Metric">Metric</option>
+              <option value="Bachelor">Bachelor</option>
+              <option value="Master">Master</option>
+            </select>
+          </label>
 
-          <label class="block" for="degree-transcript-input">
-            <span class="font-semibold">Upload Degree Transcript:</span>
-            <input type="file" name="degree_transcript" class="w-full border rounded p-2" id="degree-transcript-input" />
-          </label>
-        </div>
+          <label class="block" for="degree-transcript-input">
+            <span class="font-semibold">Upload Degree Transcript:</span>
+            <input type="file" name="degree_transcript" class="w-full border rounded p-2" id="degree-transcript-input" />
+          </label>
+        </div>
 
-        <hr>
+        <hr>
 
-        <div class="mt-6">
-          <label class="flex items-start" for="declaration-checkbox">
-            <input type="checkbox" name="declaration_agreement" class="mr-2 mt-1 w-5 h-5 md:w-4 md:h-4" required id="declaration-checkbox" />
-            <p class="text-sm text-gray-700">
-              <span class="font-semibold">I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT.</span><br>
-              I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.<br>
-              Defiance will render my admission canceled at any point in time.<br>
-              Upon completion of the course, I will complete the required project by SWIT.<br>
-              <span class="font-semibold text-red-600">It's mandatory for female students to wear abaya/hijab in the class.</span>
-            </p>
-          </label>
-        </div>
+        <div class="mt-6">
+          <label class="flex items-start" for="declaration-checkbox">
+                        <input type="checkbox" name="declaration_agreement" class="mr-2 mt-1 w-6 h-6" required id="declaration-checkbox" />
+            <p class="text-sm text-gray-700">
+              <span class="font-semibold">I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT.</span><br>
+              I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.<br>
+              Defiance will render my admission canceled at any point in time.<br>
+              Upon completion of the course, I will complete the required project by SWIT.<br>
+              <span class="font-semibold text-red-600">It's mandatory for female students to wear abaya/hijab in the class.</span>
+            </p>
+          </label>
+        </div>
 
-        <div class="mt-4">
-          <label class="flex items-center" for="notRobot">
-            <input type="checkbox" id="notRobot" name="not_robot" class="mr-2 w-5 h-5 md:w-4 md:h-4" required />
-            <span class="font-semibold">I'm not a robot</span>
-          </label>
-        </div>
+        <div class="mt-4">
+          <label class="flex items-center" for="notRobot">
+                        <input type="checkbox" id="notRobot" name="not_robot" class="mr-2 w-6 h-6" required />
+            <span class="font-semibold">I'm not a robot</span>
+          </label>
+        </div>
 
-        <button type="submit" id="submitButton" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
-          Submit
-        </button>
-      </form>
-    </div>
+        <button type="submit" id="submitButton" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+          Submit
+        </button>
+      </form>
+    </div>
 
-    <script>
-      const form = document.getElementById('registrationForm');
-      const notRobotCheckbox = document.getElementById('notRobot');
+    <script>
+      const form = document.getElementById('registrationForm');
+      const notRobotCheckbox = document.getElementById('notRobot');
 
-      form.addEventListener('submit', function(event) {
-        if (!notRobotCheckbox.checked) {
-          alert("Please confirm you are not a robot by checking the box.");
-          event.preventDefault(); // Prevent form submission
-        }
-      });
-    </script>
-  </body>
+      form.addEventListener('submit', function(event) {
+        if (!notRobotCheckbox.checked) {
+          alert("Please confirm you are not a robot by checking the box.");
+          event.preventDefault(); // Prevent form submission
+        }
+      });
+    </script>
+  </body>
 </html>
